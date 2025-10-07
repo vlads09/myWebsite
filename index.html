@@ -1,9 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
+    <title>Vlad's Personal</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js" defer></script>
 </head>
+
+<body>
+    <!-- create my website with links available -->
+    <header class="header">
+        <h1>Welcome to My Bio</h1>
+        <div class="flex justify-center">
+            <button id="myButtonGit"
+                class="mt-4 bg-white text-purple-900 font-bold py-2 px-4 rounded hover:bg-gray-200">
+                Github
+            </button>
+            <button id="myButtonLinkedIn"
+                class="mt-4 ml-4 bg-white text-purple-900 font-bold py-2 px-4 rounded hover:bg-gray-200">
+                LinkedIn
+            </button>
+    </header>
+
+    <div class="bio">
+        <div class="flex justify-center">
+            <!-- newline -->
+            <!-- add picture -->
+            <img src="happy-robot-john-schwegel.jpg" alt="My Photo" class="rounded-full w-32 h-32 mr-4">
+            <p class="font-bold">Salut!<br>Sunt Vlad Simion.</p>
+        </div>
+        <p>Sunt student la masterul de Management in Tehnologia Informatiei la Facultatea de Automatica si Calculatoare,
+            anul 1.</p>
+        <!-- create two columns one with interests and one with skills -->
+        <div class="grid grid-cols-2 gap-4 mt-4">
+            <div>
+                <h2 class="text-xl font-bold mb-2">Interests</h2>
+                <ul class="list-disc list-inside">
+                    <li>Artificial Intelligence</li>
+                    <li>Machine Learning</li>
+                    <li>Web Development</li>
+                    <li>Data Science</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold mb-2">Skills</h2>
+                <ul class="list-disc list-inside">
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>HTML/CSS</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+        </div>
+        <p>Acesta este CV-ul meu:</p>
+        <div class="pdf">
+            <iframe src="VladSimion_CV.pdf" width="80%" height="600px" style="display: inline-block;"></iframe>
+        </div>
+    </div>
+    <footer>
+        <form class="flex items-center justify-center flex-col">
+            <div class="flex justify-center p-4">
+                <h2>Subscribe to my Newsletter</h2>
+            </div>
+
+            <div class="container" style="background-color:rgb(68, 1, 68)">
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="text" placeholder="Email address" name="mail" required>
+                <br>
+                <label>
+                    <input type="checkbox" checked="checked" name="subscribe"> I'd like to receive news and special offers.
+                </label>
+            </div>
+
+            <div class="container">
+                <input type="submit" value="Subscribe">
+            </div>
+        </form>
+    </footer>
+</body>
+
 </html>

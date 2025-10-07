@@ -1,0 +1,66 @@
+.header {
+    background-color: rgb(68, 1, 68);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.bio {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.pdf {
+    margin-top: 20px;
+    text-align: center;
+    place-content: center;
+}
+
+form {
+    border: 4px solid #f1f1f1;
+    text-align: center;
+    background-color: rgb(68, 1, 68);
+    color: white;
+    place-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Add some padding and a grey background color to containers */
+.container {
+    background-color: rgb(68, 1, 68);
+}
+
+/* Style the input elements and the submit button */
+input[type=text],
+input[type=submit] {
+    width: 50%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    color: black;
+}
+
+/* Add margins to the checkbox */
+input[type=checkbox] {
+    margin-top: 16px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+    background-color: rgb(226, 123, 6);
+    color: white;
+    border: none;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
